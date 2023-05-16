@@ -1,0 +1,142 @@
+<div class="col-6">
+  <section>
+   <h2> Items del proyecto</h2>
+   </section>
+   <ul class="list-group list-group-flush">
+       <li class="list-group-item">
+         <a routerLink="/posts">Posts</a></li>
+       <li class="list-group-item"> 
+           <a routerLink="/Descripcion_tema">Descripcion del tema</a></li>
+       <li class="list-group-item"> 
+            <a routerLink="/Planteamiento_problema">Planteamiento del problema</a></li>
+       <li class="list-group-item"> 
+            <a routerLink="/Hipotesis">Hipotesis</a></li>
+       <li class="list-group-item"> 
+             <a routerLink="/Objetivo_General">Objetivo General</a></li>
+       <li class="list-group-item"> 
+             <a routerLink="/Justificacion">Justificacion</a></li>
+     </ul>
+
+</div>
+
+
+<div>
+<div class="mb-3">
+
+   <h4>Posts</h4>
+   <h5>Aqui se escribe el titulo del proyecto</h5>
+   <label for="" class="form-label"> TITULO </label>
+   <input type="text"
+   class="form-control" [(ngModel)]=" post.title " placeholder="">
+    <small id="helpid" class="form-text text-muted">text</small>
+
+    
+</div>
+
+<div class="mb-3">
+   <label for="" class="form-label">Detalle</label>
+   <input type="text"
+   class="form-control" [(ngModel)]="post.detalle " placeholder="">
+    <small id="helpid" class="form-text text-muted">help text</small>
+
+</div>
+
+<button type="button"  (click)="onSave()" class="btn btn-primary">GUARDAR</button>
+
+</div>
+
+
+
+
+
+   <div class="mb-3">
+   
+       <h4>Descripcion del tema</h4>
+       <h5>Aqui se describe el tema, anteriormente titulado</h5>
+       <label for="" class="form-label"> INICIO </label>
+       <input type="text"
+       class="form-control" [(ngModel)]=" Descripcion.tema " placeholder="">
+        <small id="helpid" class="form-text text-muted">text</small>
+   
+   </div>
+   
+   <div class="mb-3">
+         <label for="" class="form-label">Descripcion</label>
+         <input type="text"
+        class="form-control" [(ngModel)]="Descripcion.descripcion " placeholder="">
+        <small id="helpid" class="form-text text-muted"> </small>
+   
+  
+  
+   
+   <button type="button"  (click)="onSavedes()" class="btn btn-primary">GUARDAR</button>
+
+
+   <div>
+       <div class="mb-3">
+       
+           <h4>Planteamiento del problema</h4>
+           <label for="" class="form-label"> Problema </label>
+           <input type="text"
+           class="form-control" [(ngModel)]=" Planteamiento.problema" placeholder="">
+            <small id="helpid" class="form-text text-muted">text</small>
+       
+       </div>
+       
+       
+       
+       <button type="button"  (click)="onSavepro()" class="btn btn-primary">GUARDAR</button>
+       
+       </div>
+
+
+    <div>
+        <div class="mb-3">
+           
+               <h4>Hipotesis</h4>
+               <label for="" class="form-label"> Hipotesis </label>
+               <input type="text"
+               class="form-control" [(ngModel)]=" Hipo.hipote" placeholder="">
+                <small id="helpid" class="form-text text-muted">text</small>
+           
+        </div>
+           
+           
+           
+       <button type="button"  (click)="onSavehi()" class="btn btn-primary">GUARDAR</button>
+           
+           </div>
+
+    <div>
+         <div class="mb-3">
+                  
+         <h4>Objetivos generales</h4>
+         <label for="" class="form-label"> Objetivos </label>
+         <input type="text"class="form-control" [(ngModel)]=" objet.General" placeholder="">
+         <small id="helpid" class="form-texttext-muted">text</small>
+                  
+           </div>
+                  
+                  
+                  
+        <button type="button"  (click)="onSaveob()" class="btn btn-primary">GUARDAR</button>
+                  
+     </div>
+
+
+
+     <div>
+       <div class="mb-3">
+                
+         <h4>Justificacion</h4>
+         <label for="" class="form-label"> Justificacion </label>
+         <input type="text"class="form-control" [(ngModel)]=" justifica.justificado" placeholder="">
+         <small id="helpid" class="form-texttext-muted">text</small>
+                
+         </div>
+                
+                
+                
+     <button type="button"  (click)="onSavejus()" class="btn btn-primary">GUARDAR</button>
+                
+   </div>

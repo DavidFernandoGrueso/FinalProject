@@ -1,0 +1,82 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "image": null,
+      "title": "json-server",
+      "detalle": "info del detalle"
+    },
+    {
+      "id": 2,
+      "title": "guarda",
+      "detalle": "cartas"
+    }
+  ],
+  "Descripcion_del_tema": [
+    {
+      "id": 2,
+      "tema": "",
+      "descripcion": "info del detalle"
+    },
+    {
+      "id": 3,
+      "tema": "magic ",
+      "descripcion": "jhonson"
+    }
+  ],
+  "Planteamiento_del_problema": [
+    {
+      "id": 3,
+      "Problema": ""
+    },
+    {
+      "id": 4,
+      "problema": "un problema"
+    }
+  ],
+  "Hipotesis": [
+    {
+      "id": 4,
+      "hipote": "info del detalle"
+    },
+    {
+      "id": 5,
+      "hipote": "hipoteco mi casa?"
+    }
+  ],
+  "Objetivo_general": [
+    {
+      "id": 5,
+      "General": ""
+    },
+    {
+      "id": 7,
+      "General": "comprar carne"
+    },
+    {
+      "id": 8,
+      "General": "vender niños"
+    }
+  ],
+  "Justificacion": [
+    {
+      "id": 6,
+      "Justificado": ""
+    },
+    {
+      "id": 7,
+      "justificado": "c"
+    }
+  ],
+  "Usuario": [
+    {
+      "id": 1,
+      "username": "",
+      "pasword": ""
+    },
+    {
+      "id": 2,
+      "pasword": "59374"
+    }
+  ]
+}

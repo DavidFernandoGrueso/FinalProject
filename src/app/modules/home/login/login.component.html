@@ -1,0 +1,19 @@
+
+  <div>
+<div class="mb-3 row">
+  <label for=" " class="col-sm-2 col-form-label">Correo</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" [ngClass]=" user.username"  placeholder="usuario@*****">
+    
+  </div>
+</div>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Clave</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" [(ngModel)]=" user.pasword" id="inputPassword" placeholder="******">
+    </div>
+  </div>
+  
+    
+    <button type="button" (click)="SaveUsu()" class="btn btn-primary">INGRESAR</button>
+  </div>
