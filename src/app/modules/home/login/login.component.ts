@@ -4,16 +4,6 @@ import { JsonserveService } from 'src/app/services/jsonserve.service';
 import { FormsModule } from '@angular/forms';
 
 
-@NgModule({
-
-  imports: [
- 
-   FormsModule
-  ],
-  providers: []
-})
-export class AppModule { }
-
 
 export class USUARIO{
   public id: number = 0;

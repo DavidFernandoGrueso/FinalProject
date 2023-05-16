@@ -12,6 +12,8 @@ export class JsonserveService {
     public http: HttpClient
     ) {  }
 
+    // usuario
+
     createUsu(user: any){
       this.http.post("http://localhost:3000/Usuario", user).subscribe((res)=>{
         console.log(res);
@@ -22,6 +24,8 @@ export class JsonserveService {
       return this.http.get("http://localhost:3000/Usuario");
     }
 
+    // Post
+
     onCreate(post: any){
       this.http.post("http://localhost:3000/posts", post).subscribe((res)=>{
         console.log(res);
@@ -31,11 +35,9 @@ export class JsonserveService {
     onLoad(){
       return this.http.get("http://localhost:3000/posts");
 
-    
-    
-       
-    
-}
+   }
+
+   
 //descripcion del tema 
   onCreatedes(Descripcion: any){
         this.http.post(" http://localhost:3000/Descripcion_del_tema", Descripcion).subscribe((res)=>{
