@@ -1,0 +1,101 @@
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/icons/job.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+        Anteproyecto 
+      </a>
+    </div>
+  </nav>
+
+{{post | json}}
+ <div>
+       <h5>Aqui se escribe el titulo del proyecto</h5>
+       <label for= "" class="form-label"> Titulo del proyecto </label>
+       <input type="text" class="form-control" [(ngModel)]=" post.title " placeholder="">
+        <small id="helpid" class="form-text text-muted">Titulo que va a agsinar al proyecto</small>
+  </div>  
+        
+    
+    <div >
+        <select class="form-select mb-3" [(ngModel)]="post.Carrera">
+            <option *ngFor="let Items of carrera" [value]="Items.id "> {{Items.name}} </option>
+          </select>
+        
+    
+    </div>
+    
+    <button type="button"  (click)="onSave()" class="btn btn-primary">GUARDAR</button>
+    
+
+
+
+
+    <footer class="container-fluid mt-5 pt-5 text-center text-white" style="background-color: #e6f1c2; ">
+      <!-- Grid container -->
+      <div class="container-fluid">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://ProjectsMD.com/">ProjectsMD.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>

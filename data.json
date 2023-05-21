@@ -2,70 +2,81 @@
   "posts": [
     {
       "id": 1,
-      "image": null,
-      "title": "json-server",
-      "detalle": "info del detalle"
+      "title": " "
+    },
+    {
+      "title": "Gafas con bluetoth",
+      "Carrera": "1",
+      "id": 1
+    },
+    {
+      "title": "MADERA",
+      "Carrera": "4",
+      "id": 2
+    },
+    {
+      "title": "Iniciativa vengadores",
+      "Carrera": "3",
+      "id": 3
+    }
+  ],
+  "carreras": [
+    {
+      "id": 1,
+      "name": "Ingenieria de sistemas"
     },
     {
       "id": 2,
-      "title": "guarda",
-      "detalle": "cartas"
-    }
-  ],
-  "Descripcion_del_tema": [
-    {
-      "id": 2,
-      "tema": "",
-      "descripcion": "info del detalle"
+      "name": "Agronomia"
     },
     {
       "id": 3,
-      "tema": "magic ",
-      "descripcion": "jhonson"
+      "name": "Administracion de empresas"
+    },
+    {
+      "id": 4,
+      "name": "Hoteleria y turismo"
+    },
+    {
+      "id": 5,
+      "name": "Acuicultura"
+    }
+  ],
+  "Descripcion_tema": [
+    {
+      "id": 1,
+      "tema": "",
+      "post": ""
+    },
+    {
+      "post": "1",
+      "tema": "Gafas que sirven para realizar todo tipo de tareas usando conexion bluetooth",
+      "id": 2
     }
   ],
   "Planteamiento_del_problema": [
     {
-      "id": 3,
-      "Problema": ""
-    },
-    {
-      "id": 4,
-      "problema": "un problema"
+      "id": 1,
+      "Problema": "",
+      "post": ""
     }
   ],
   "Hipotesis": [
     {
-      "id": 4,
+      "id": 1,
       "hipote": "info del detalle"
-    },
-    {
-      "id": 5,
-      "hipote": "hipoteco mi casa?"
     }
   ],
   "Objetivo_general": [
     {
-      "id": 5,
+      "id": 1,
       "General": ""
-    },
-    {
-      "id": 7,
-      "General": "comprar carne"
-    },
-    {
-      "id": 8,
-      "General": "vender niños"
     }
   ],
   "Justificacion": [
     {
-      "id": 6,
+      "id": 1,
       "Justificado": ""
-    },
-    {
-      "id": 7,
-      "justificado": "c"
     }
   ],
   "Usuario": [
@@ -73,11 +84,6 @@
       "id": 1,
       "username": "",
       "pasword": ""
-    },
-    {
-      "id": 2,
-      "username": "",
-      "pasword": "59374"
     },
     {
       "id": 3,

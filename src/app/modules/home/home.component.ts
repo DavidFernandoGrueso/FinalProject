@@ -5,6 +5,8 @@ import { PeopleService } from 'src/app/services/people.service'
 import {Project } from 'src/app/class/project'
 import {Subscription } from 'rxjs'
 import {People} from 'src/app/class/people'
+import { PostService } from 'src/app/services/post.service';
+import { Post } from 'src/app/itemss/post';
 
 @Component({
   selector: 'app-home',
@@ -25,9 +27,14 @@ export class HomeComponent implements OnInit {
   public people = new People();
   public peoples: People[ ] = [];
 
+  public posts: Post[] = [];
+
   constructor(
     public projectServices: ProjectsService,
     public peopleServices: PeopleService,
+    private postServices : PostService
+
+  
     ){  }
 
   ngOnInit(): void{

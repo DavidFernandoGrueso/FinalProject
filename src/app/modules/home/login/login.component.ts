@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 
 
 
+
+
 export class USUARIO{
   public id: number = 0;
   public username!: String
@@ -25,17 +27,16 @@ export class USUARIO{
   styleUrls: ['./login.component.sass']
 })
 export class LoginComponent implements OnInit {
-  
+
+ 
   public user = new USUARIO();
     public Usuario: USUARIO[] = [];
-    usern = "";
   
     constructor(
       public jsons : JsonserveService
-      )
-    {
-      
-    }
+      ) {}
+
+  
 
     CargaUsu() {
       this.Usuario = []

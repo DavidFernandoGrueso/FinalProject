@@ -22,21 +22,8 @@ export class JsonserveService {
 
     LoadUsu(){
       return this.http.get("http://localhost:3000/Usuario");
+
     }
-
-    // Post
-
-    onCreate(post: any){
-      this.http.post("http://localhost:3000/posts", post).subscribe((res)=>{
-        console.log(res);
-      })
-    }
-
-    onLoad(){
-      return this.http.get("http://localhost:3000/posts");
-
-   }
-
    
 //descripcion del tema 
   onCreatedes(Descripcion: any){
@@ -50,6 +37,7 @@ export class JsonserveService {
 }
 
 //Problema
+
 onCreatepro(Planteamiento: any){
   this.http.post(" http://localhost:3000/Planteamiento_del_problema", Planteamiento).subscribe((res)=>{
     console.log(res);
