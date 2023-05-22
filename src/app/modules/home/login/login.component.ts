@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit {
  
   public user = new USUARIO();
     public Usuario: USUARIO[] = [];
+    public User: USUARIO = new USUARIO
   
     constructor(
       public jsons : JsonserveService
@@ -53,6 +54,7 @@ export class LoginComponent implements OnInit {
      SaveUsu(){
           this.jsons.createUsu(this.user);
           this.CargaUsu();
+          this.user = new USUARIO();
         }
 
 

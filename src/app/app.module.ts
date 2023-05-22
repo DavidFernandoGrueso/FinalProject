@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { PostComponent } from './it/post/post.component';
+import { LoginService } from './services/login.service';
 
 
 
@@ -22,7 +23,9 @@ import { PostComponent } from './it/post/post.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    LoginService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

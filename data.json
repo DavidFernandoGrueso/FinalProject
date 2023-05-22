@@ -2,22 +2,14 @@
   "posts": [
     {
       "id": 1,
+      "adiccion": "",
       "title": " "
     },
     {
-      "title": "Gafas con bluetoth",
-      "Carrera": "1",
-      "id": 1
-    },
-    {
-      "title": "MADERA",
+      "title": "Maravillas de una ciudad perdida entre la pobreza",
+      "adiccion": "Buenaventura es un magico lugar, que merece ser detallado de una buena forma",
       "Carrera": "4",
-      "id": 2
-    },
-    {
-      "title": "Iniciativa vengadores",
-      "Carrera": "3",
-      "id": 3
+      "id": 1
     }
   ],
   "carreras": [
@@ -64,19 +56,22 @@
   "Hipotesis": [
     {
       "id": 1,
-      "hipote": "info del detalle"
+      "hipote": "info del detalle",
+      "post": ""
     }
   ],
   "Objetivo_general": [
     {
       "id": 1,
-      "General": ""
+      "General": "",
+      "post": ""
     }
   ],
   "Justificacion": [
     {
       "id": 1,
-      "Justificado": ""
+      "Justificado": "",
+      "post": ""
     }
   ],
   "Usuario": [
@@ -86,14 +81,19 @@
       "pasword": ""
     },
     {
-      "id": 3,
+      "id": 2,
       "username": "Carmen@gmail.com",
       "pasword": "303833i3bf"
     },
     {
-      "id": 4,
+      "id": 3,
       "username": "rbrbufnsf@gmail.com",
       "pasword": "eienf38fn8e"
+    },
+    {
+      "id": 4,
+      "username": "FernandoRAMOS@gmail.com",
+      "pasword": "cristosimeama?"
     }
   ]
 }

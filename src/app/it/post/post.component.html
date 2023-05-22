@@ -1,20 +1,34 @@
 <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="assets/icons/job.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
-        Anteproyecto 
-      </a>
+  <div class="navbar-container">
+    <div class="navbar-left">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/icons/job.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+          Anteproyecto
+        </a>
+      </div>
     </div>
-  </nav>
+    <div class="navbar-right">
+      <button routerLink="/" class="btn btn-success">Volver al Menú Principal</button>
+    </div>
+  </div>
+</nav>
+
+<main>
 
 {{post | json}}
  <div>
-       <h5>Aqui se escribe el titulo del proyecto</h5>
-       <label for= "" class="form-label"> Titulo del proyecto </label>
+       <h5>Titulo y descripcion del anteproyecto</h5>
+       <label for= "" class="form-label"> Titulo del anteproyecto </label>
        <input type="text" class="form-control" [(ngModel)]=" post.title " placeholder="">
         <small id="helpid" class="form-text text-muted">Titulo que va a agsinar al proyecto</small>
   </div>  
-        
+   
+  <div>
+   <label for= "" class="form-label"> Descripcion </label>
+    <input type="text" class="form-control" [(ngModel)]=" post.adiccion " placeholder="">
+     <small id="helpid" class="form-text text-muted">descripcion anteproyecto</small>
+</div>  
     
     <div >
         <select class="form-select mb-3" [(ngModel)]="post.Carrera">
@@ -23,10 +37,9 @@
         
     
     </div>
-    
-    <button type="button"  (click)="onSave()" class="btn btn-primary">GUARDAR</button>
-    
-
+    <button type="button" a routerLink="Main" (click)="onSave()" class="btn btn-primary">GUARDAR</button>
+   
+</main>
 
 
 

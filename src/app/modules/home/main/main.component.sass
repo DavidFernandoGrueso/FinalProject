@@ -1,15 +1,25 @@
-section
+.navbar 
+  &-container 
+    display: grid
+    grid-template-columns: 2fr 4fr
+    align-items: center
+    padding: 10px 10px
+  
 
-    padding-left: 130px
-    padding-top: 20px
-
-ul
-    padding: 20px
-    padding-bottom: 30px
-    padding-left: 10px
-    li
+  &-left 
+    grid-column: 1
+    position: center
+    ul
       a
         color: black
+  
+
+  &-right 
+    grid-column: 2
+    padding-left: 150px
+    position: center
+
+
 
 
 button
@@ -20,6 +30,7 @@ app-headerhome
   padding: 10px
 
 
-main
-  grid-template-areas: auto auto
+
   
+
+

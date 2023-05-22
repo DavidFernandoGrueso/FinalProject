@@ -1,29 +1,33 @@
 
 <app-headerhome></app-headerhome>
 
-<main> 
-  <button  routerLink="post" type="button" class="btn btn-outline-success" btn-lg>AGREGAR PROYECTO</button>
-  <section></section>
-   <div class="row">
-     <div class="col-3">
-           <section><h2> Proyectos</h2> </section>
-   <ul class="list-group list-group-flush">
-       <li (click)="publicado(Iten)"  class="list-group-item" *ngFor=" let Iten of posts">
-         <a [routerLink]="['/post', Iten.id]">{{Iten.title}}</a>
-     </li>
+<main>
+   
+  
 
-    </ul>
- </div>
- <div *ngIf="Descripcion.post">
-<div class="col-9">
-<div class="mb-3">
-     <h3>Proyecto: {{Descripcion.post }} </h3>
-  <label for="" class="form-label" > Descripcion del tema</label>
-  <textarea class="form-control"  rows="3" [(ngModel)]="Descripcion.tema"></textarea>
-</div>
-<button type="button"  (click)="onSaved()" class="btn btn-outline-dark">GUARDAR</button>
-</div>
-</div></div>
+ <nav class="navbar">
+     <button  routerLink="post" type="button" class="btn btn-outline-success" btn-lg>AGREGAR PROYECTO</button>
+   <div class="navbar-container">
+     <div class="navbar-left">
+       <section><h2> Proyectos</h2> </section>
+        <ul class="list-group list-group-flush">
+        <li (click)="publicado(Iten)"  class="list-group-item" *ngFor=" let Iten of posts">
+         <a [routerLink]="['/post', Iten.id]">{{Iten.title}}</a>
+        </li>
+
+      </ul> </div>
+      <div *ngIf="Descripcion.post" class="navbar-right">
+      <div class="col-9">
+      <div class="mb-3">
+                <h3>Proyecto: {{Descripcion.post }} </h3>
+          <label for="" class="form-label" > Descripcion del tema</label>
+          <textarea class="form-control"  rows="3" [(ngModel)]="Descripcion.tema"></textarea>
+          </div>
+        <button type="button"  (click)="onSaved()" class="btn btn-outline-dark">GUARDAR</button>
+      </div>
+     </div>
+   </div>
+  </nav>
 </main>
 
 <app-footerho></app-footerho>
