@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 
 
+
 export class USUARIO{
   public id: number = 0;
   public username!: String
@@ -28,6 +29,7 @@ export class USUARIO{
 })
 export class LoginComponent implements OnInit {
 
+
  
   public user = new USUARIO();
     public Usuario: USUARIO[] = [];
@@ -38,6 +40,7 @@ export class LoginComponent implements OnInit {
       ) {}
 
   
+
 
     CargaUsu() {
       this.Usuario = []
