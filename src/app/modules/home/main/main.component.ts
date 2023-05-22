@@ -28,6 +28,9 @@ export class MainComponent implements OnInit{
   public justi: Justificacion = new Justificacion
   public ite: elementos = new elementos
 
+  Mostrartwo: boolean = false
+  Mostrarthree : boolean = false
+
   
 
 
@@ -54,13 +57,14 @@ export class MainComponent implements OnInit{
 
   onSaved(){
     this.descripcion_temaServices.onCreated(this.Descripcion).subscribe(()=>{
-      this.Descripcion = new Descripcion_tema
+      this.Mostrartwo = true;
+      
     })
   }
 
   onSaveh(){
     this.hipotesisServices.onCreateh(this.Hip).subscribe(()=>{
-      this.Hip = new Hipotesis
+      this.Mostrarthree = true;
     })
   }
 

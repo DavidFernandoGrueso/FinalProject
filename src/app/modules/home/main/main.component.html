@@ -14,7 +14,7 @@
        <section><h2> Proyectos</h2> </section>
         <ul class="list-group list-group-flush">
         <li  (click)="publicado(Iten)"  class="list-group-item"  *ngFor=" let Iten of posts">
-         <a [routerLink]="['/post', Iten.id]">{{Iten.title}}</a>
+         <a [routerLink]="['/', Iten.id]">{{Iten.title}}</a>
         </li>
 
       </ul> </div>  
@@ -31,19 +31,30 @@
       </div>
  
 
-      <!-- DESCrip 
+     <!-- HIPOTESIS -->
 
-      <div class="col-9">
+      <div class="col-9" *ngIf="Mostrartwo">
         <div class="mb-3">
-                  <h3>Proyecto: {{Descripcion.post }} </h3>
-            <label for="" class="form-label" > Descripcion del tema</label>
-            <textarea class="form-control"  rows="3" [(ngModel)]="Descripcion.tema"></textarea>
+            <label for="" class="form-label" ><h3> Hipotesis</h3></label>
+            <textarea class="form-control"  rows="3" [(ngModel)]="Hip.Hipote"></textarea>
             </div>
-          <button type="button"  (click)="onSaved()" class="btn btn-outline-dark">GUARDAR</button>
-        </div> -->
-    </div> 
-     </div>
-   
+          <button type="button"  (click)="onSaveh()" class="btn btn-outline-dark">GUARDAR</button>
+        </div> 
+
+
+        <!-- JUSTIFICACION -->
+
+        <div class="col-9" *ngIf="Mostrarthree">
+        <div class="mb-3">
+            <label for="" class="form-label" ><h3> Justificacion</h3></label>
+            <textarea class="form-control"  rows="3" [(ngModel)]="justi.justificado"></textarea>
+            </div>
+          <button type="button"  (click)="onSavej()" class="btn btn-outline-dark">GUARDAR</button>
+          
+        </div> 
+    </div>  
+   </div>
+    
   </nav>
 </main>
 
