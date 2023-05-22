@@ -16,6 +16,8 @@
         <li  (click)="publicado(Iten)"  class="list-group-item"  *ngFor=" let Iten of posts">
          <a [routerLink]="['/', Iten.id]">{{Iten.title}}</a>
         </li>
+        <h2>ITEMS DEL PROYECTO</h2>
+        <li *ngFor="let el of elemento" [value]="el.id "> {{el.name}} </li>
 
       </ul> </div>  
 

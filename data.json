@@ -44,6 +44,11 @@
       "post": "1",
       "tema": "Gafas que sirven para realizar todo tipo de tareas usando conexion bluetooth",
       "id": 2
+    },
+    {
+      "post": "1",
+      "tema": "carnicero",
+      "id": 3
     }
   ],
   "Hipotesis": [
@@ -63,9 +68,15 @@
   "elementos": [
     {
       "id": 1,
-      "Descripcion_tema": "",
-      "Hipotesis": "",
-      "Justificacion": ""
+      "name": "Descripcion del tema"
+    },
+    {
+      "id": 2,
+      "name": "Hipotesis"
+    },
+    {
+      "id": 3,
+      "name": "Justificacion"
     }
   ],
   "Usuario": [
@@ -88,12 +99,6 @@
       "id": 4,
       "username": "FernandoRAMOS@gmail.com",
       "pasword": "cristosimeama?"
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
     }
   ]
 }

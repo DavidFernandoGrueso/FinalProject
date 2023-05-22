@@ -22,11 +22,11 @@ import { elementos } from 'src/app/itemss/elementos';
 
 
 export class MainComponent implements OnInit{
+  public elemento : elementos[] = []
   public posts: Post[] = []
   public Descripcion: Descripcion_tema = new Descripcion_tema
   public Hip: Hipotesis = new Hipotesis
   public justi: Justificacion = new Justificacion
-  public ite: elementos = new elementos
 
   Mostrartwo: boolean = false
   Mostrarthree : boolean = false
@@ -40,7 +40,8 @@ export class MainComponent implements OnInit{
     public descripcion_temaServices : DescripcionTemaService,
     public hipotesisServices : HipotesisService,
     public justificacionServices : JustificacionService,
-    public elementosServices : ElementosService
+    public elementosServices : ElementosService,
+    
 
     ){   }
 
@@ -50,8 +51,16 @@ export class MainComponent implements OnInit{
         let tem = new Post()
         tem.set(element)
         this.posts.push(tem)
+
+
       });
     })
+
+    this.elementosServices.onLoade().subscribe((res: any)=>{
+      res.forEach((element:any)  => {
+        let tem = new elementos(element)
+        this.elemento.push(tem) });
+      })
    
   }
 
@@ -74,11 +83,7 @@ export class MainComponent implements OnInit{
     })
   }
 
-  onSavee(){
-    this.elementosServices.onCreatee(this.ite).subscribe(()=>{
-      this.ite = new elementos
-    })
-  }
+
 
   publicado(Iten: Post){
     this.Descripcion.post = Iten.id.toString();
