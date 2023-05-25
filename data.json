@@ -86,19 +86,24 @@
       "pasword": ""
     },
     {
-      "id": 2,
-      "username": "Carmen@gmail.com",
-      "pasword": "303833i3bf"
+      "id": 5,
+      "username": "kevin",
+      "password": "12"
     },
     {
-      "id": 3,
-      "username": "rbrbufnsf@gmail.com",
-      "pasword": "eienf38fn8e"
+      "id": 6,
+      "username": "armani@gmail.com",
+      "password": "record"
     },
     {
-      "id": 4,
-      "username": "FernandoRAMOS@gmail.com",
-      "pasword": "cristosimeama?"
+      "id": 7,
+      "username": "mexico",
+      "password": "nogano"
+    },
+    {
+      "id": 8,
+      "username": "lucioporfavor",
+      "password": "80esbien"
     }
   ]
 }

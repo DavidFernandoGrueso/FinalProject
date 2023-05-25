@@ -4,6 +4,7 @@ import { PostComponent } from './it/post/post.component';
 import { MainComponent } from './modules/home/main/main.component';
 
 
+
 const routes: Routes = [
   {
     path: "", 
@@ -17,5 +18,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+  public isLoggedIn = false;
+ }
 

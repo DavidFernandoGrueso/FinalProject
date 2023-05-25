@@ -31,6 +31,7 @@
 </div>  
     
     <div >
+      <label for= "" class="form-label"> Seleccione la carrera a la que pertenece su anteproyecto </label>
         <select class="form-select mb-3" [(ngModel)]="post.Carrera">
             <option *ngFor="let Items of carrera" [value]="Items.id "> {{Items.name}} </option>
           </select>

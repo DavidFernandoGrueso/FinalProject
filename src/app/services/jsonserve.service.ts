@@ -14,8 +14,8 @@ export class JsonserveService {
 
     // usuario
 
-    createUsu(user: any){
-      this.http.post("http://localhost:3000/Usuario", user).subscribe((res)=>{
+    createUsu(usern: any){
+      this.http.post("http://localhost:3000/Usuario", usern).subscribe((res)=>{
         console.log(res);
       })
     }

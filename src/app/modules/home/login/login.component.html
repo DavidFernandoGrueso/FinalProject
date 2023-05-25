@@ -3,21 +3,21 @@
 <div class="mb-3 row">
   <label for=" " class="col-sm-2 col-form-label">Correo</label>
   <div class="col-sm-10">
-    <input type="form-class" class="form-control"   [(ngModel)]=" user.username"  placeholder="usuario@*****">
+    <input type="form-class" class="form-control"   [(ngModel)]=" usern.username"  placeholder="usuario@*****">
     
   </div>
 </div>
   <div class="mb-3 row">
     <label for="inputPassword" class="col-sm-2 col-form-label">Clave</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" [(ngModel)]=" user.pasword" id="inputPassword" placeholder="******">
+      <input type="password" class="form-control" [(ngModel)]=" usern.password" id="inputPassword" placeholder="******">
     </div>
     
   </div>
   <nav class="navbar">
     <div class="navbar-container">
       <div class="navbar-left">
-        <button type="button" a routerLink="Main" class="btn btn-primary">INGRESAR</button>
+        <button type="button"  (click)="login()" class="btn btn-primary">INGRESAR</button>
   
   </div>
   <div class="navbar-right">
