@@ -9,7 +9,7 @@
   
      
    <div class="navbar-container">
-     <button  routerLink="post" type="button" class="btn btn-outline-success" btn-lg>AGREGAR PROYECTO</button>
+     <button  routerLink="Main" type="button" class="btn btn-outline-success" btn-lg>Volver</button>
      <div class="navbar-left">
        <section><h2> Proyectos</h2> </section>
         <ul class="list-group list-group-flush">
@@ -20,9 +20,10 @@
         <li *ngFor="let el of elemento" [value]="el.id "> {{el.name}} </li>
 
       </ul> </div>  
-
+    
       <!-- Descripcion del tema -->
       <div *ngIf="Descripcion.post" class="navbar-right">
+      
       <div class="col-9">
       <div class="mb-3">
                 <h3>Proyecto: {{Descripcion.post }} </h3>
@@ -36,8 +37,9 @@
      <!-- HIPOTESIS -->
 
       <div class="col-9" *ngIf="Mostrartwo">
-        <div class="mb-3">
-            <label for="" class="form-label" ><h3> Hipotesis</h3></label>
+      <div class="mb-3">
+        <h4>Proyecto: {{ descripcionId }}</h4>
+            <label for="" class="form-label"> Hipotesis</label>
             <textarea class="form-control"  rows="3" [(ngModel)]="Hip.Hipote"></textarea>
             </div>
           <button type="button"  (click)="onSaveh()" class="btn btn-outline-dark">GUARDAR</button>
@@ -48,10 +50,11 @@
 
         <div class="col-9" *ngIf="Mostrarthree">
         <div class="mb-3">
-            <label for="" class="form-label" ><h3> Justificacion</h3></label>
+          <h4>Proyecto: {{ descripcionId }}</h4>
+            <label for="" class="form-label" > Justificacion</label>
             <textarea class="form-control"  rows="3" [(ngModel)]="justi.justificado"></textarea>
             </div>
-          <button type="button"  (click)="onSavej()" class="btn btn-outline-dark">GUARDAR</button>
+          <button type="button"  routerLink="Main" (click)="onSavej()" class="btn btn-outline-dark">GUARDAR</button>
           
         </div> 
     </div>  

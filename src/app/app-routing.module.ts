@@ -10,6 +10,7 @@ const routes: Routes = [
     path: "", 
   loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
  },
+ { path: "", redirectTo: "Main", pathMatch: "full" },
   {path: "Main/post", component: PostComponent},
   {path: "Main", component: MainComponent  }
 ];

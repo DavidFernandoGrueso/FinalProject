@@ -10,6 +10,12 @@
       "adiccion": "Buenaventura es un magico lugar, que merece ser detallado de una buena forma",
       "Carrera": "4",
       "id": 1
+    },
+    {
+      "title": "Belleza entre la muerte",
+      "adiccion": "morir esta bien",
+      "Carrera": "2",
+      "id": 2
     }
   ],
   "carreras": [
@@ -46,23 +52,27 @@
       "id": 2
     },
     {
-      "post": "1",
-      "tema": "carnicero",
-      "id": 3
+      "post": "2",
+      "tema": "Morir esta bien, esta mal ?",
+      "id": 4
     }
   ],
   "Hipotesis": [
     {
       "id": 1,
-      "hipote": "info del detalle",
+      "hipote": "",
       "post": ""
+    },
+    {
+      "Hipote": "es pequeño",
+      "id": 2
     }
   ],
   "Justificacion": [
     {
       "id": 1,
       "Justificado": "",
-      "post": ""
+      "Hipotesis": ""
     }
   ],
   "elementos": [
@@ -86,27 +96,27 @@
       "pasword": ""
     },
     {
-      "id": 5,
+      "id": 2,
       "username": "kevin",
       "password": "12"
     },
     {
-      "id": 6,
+      "id": 3,
       "username": "armani@gmail.com",
       "password": "record"
     },
     {
-      "id": 7,
+      "id": 4,
       "username": "mexico",
       "password": "nogano"
     },
     {
-      "id": 8,
+      "id": 5,
       "username": "lucioporfavor",
       "password": "80esbien"
     },
     {
-      "id": 9,
+      "id": 6,
       "username": "guerra12",
       "password": "123"
     }

@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="navbar-right">
-      <button routerLink="/" class="btn btn-success">Volver al Menú Principal</button>
+    <button  routerLink="" type="button" class="btn btn-outline-success" btn-lg>AGREGAR PROYECTO</button>
     </div>
   </div>
 </nav>
@@ -19,19 +19,19 @@
 {{post | json}}
  <div>
        <h5>Titulo y descripcion del anteproyecto</h5>
-       <label for= "" class="form-label"> Titulo del anteproyecto </label>
+       <label class="form-label"> Titulo del anteproyecto </label>
        <input type="text" class="form-control" [(ngModel)]=" post.title " placeholder="">
         <small id="helpid" class="form-text text-muted">Titulo que va a agsinar al proyecto</small>
   </div>  
    
   <div>
-   <label for= "" class="form-label"> Descripcion </label>
+   <label  class="form-label"> Descripcion </label>
     <input type="text" class="form-control" [(ngModel)]=" post.adiccion " placeholder="">
      <small id="helpid" class="form-text text-muted">descripcion anteproyecto</small>
 </div>  
     
     <div >
-      <label for= "" class="form-label"> Seleccione la carrera a la que pertenece su anteproyecto </label>
+      <label  class="form-label"> Seleccione la carrera a la que pertenece su anteproyecto </label>
         <select class="form-select mb-3" [(ngModel)]="post.Carrera">
             <option *ngFor="let Items of carrera" [value]="Items.id "> {{Items.name}} </option>
           </select>

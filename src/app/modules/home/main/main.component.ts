@@ -25,8 +25,11 @@ export class MainComponent implements OnInit{
   public elemento : elementos[] = []
   public posts: Post[] = []
   public Descripcion: Descripcion_tema = new Descripcion_tema
+  public Descripcion_tema: Descripcion_tema[] = []
   public Hip: Hipotesis = new Hipotesis
   public justi: Justificacion = new Justificacion
+  
+  public descripcionId: number | undefined;
 
   Mostrartwo: boolean = false
   Mostrarthree : boolean = false
@@ -67,7 +70,11 @@ export class MainComponent implements OnInit{
   onSaved(){
     this.descripcion_temaServices.onCreated(this.Descripcion).subscribe(()=>{
       this.Mostrartwo = true;
-      
+       
+      // Asignar el ID de post a la propiedad descripcionId
+    const postId = this.Descripcion.post;
+    const post = this.posts.find((item) => item.id.toString() === postId);
+    this.descripcionId = post ? post.id : undefined;
     })
   }
 
@@ -78,8 +85,12 @@ export class MainComponent implements OnInit{
   }
 
   onSavej(){
-    this.justificacionServices.onCreatej(this.justi).subscribe(()=>{
+      this.justificacionServices.onCreatej(this.justi).subscribe(()=>{
       this.justi = new Justificacion
+
+      const postId = this.Descripcion.post;
+      const post = this.posts.find((item) => item.id.toString() === postId);
+      this.descripcionId = post ? post.id : undefined;
     })
   }
 
@@ -87,8 +98,10 @@ export class MainComponent implements OnInit{
 
   publicado(Iten: Post){
     this.Descripcion.post = Iten.id.toString();
-
   }
+
+
+
 
 
 
